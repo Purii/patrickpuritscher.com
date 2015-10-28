@@ -8,7 +8,8 @@ const styles = {
 		color: '#fff',
 		backgroundColor: '#343d46',
 		borderTop: '2px solid #2B343E',
-		textAlign:'center'
+		textAlign:'center',
+		marginTop: '20px'
 	}
 }
 export default class Hint extends Component {
