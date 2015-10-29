@@ -19,7 +19,7 @@ const styles = {
     	transitionDuration: '0.6s',
     	transitionTimingFunction: 'ease-in-out',
     	marginTop: '20px',
-    	'@media (min-width: 321px)': {
+    	'@media (min-width: 350px)': {
     		width: '340px'
     	}
 	},
