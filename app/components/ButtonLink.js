@@ -29,8 +29,7 @@ const styles = {
 	}
 }
 
-@Radium
-export default class ButtonLink extends Component {
+class ButtonLink extends Component {
 	render() {
 		const href = this.props.href;
 		const colorScheme = this.props.colorScheme || 'default';
@@ -46,3 +45,5 @@ ButtonLink.propTypes = {
   colorScheme: PropTypes.string,
   title: PropTypes.string
 }
+
+export default Radium(ButtonLink);

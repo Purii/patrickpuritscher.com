@@ -82,8 +82,7 @@ const styles = {
 	}
 }
 
-@Radium
-export default class Card extends Component {
+class Card extends Component {
 	render() {
 		return(
 			<div style={styles.card}>
@@ -107,3 +106,5 @@ export default class Card extends Component {
 		)
 	}
 }
+
+export default Radium(Card);

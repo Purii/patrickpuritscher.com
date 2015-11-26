@@ -16,18 +16,26 @@ module.exports = {
     extensions: ['', '.js']
   },
   module: {
-    loaders: [{
-      test: /\.js$/,
-      loader: "babel",
-      exclude: /node_modules/
-    }, {
-      test: /\.css$/,
-      loader: ExtractTextPlugin.extract("style-loader", "css-loader")
-    }]
+    loaders: [
+      {
+        test: /\.js$/,
+        loader: "babel",
+        include: path.join(__dirname, "app"),
+        query: {
+          plugins: ["transform-runtime"],
+          presets: ["stage-0", "es2015", "react"]
+        }
+      },
+      {
+        test: /\.css$/,
+        loader: ExtractTextPlugin.extract("style-loader", "css-loader")
+      }
+    ]
   },
   plugins: [
     new webpack.optimize.OccurenceOrderPlugin(),
     new ExtractTextPlugin("main.css")
   ],
-  devtool: 'source-map'
+  
 };
+//devtool: 'source-map'
