@@ -6,28 +6,28 @@ require('normalize.css');
 require('./Root.css');
 
 const styles = {
-	theatre: {
-		flex: 1,
-		display: 'flex',
-		flexDirection: 'column'
-	},
-	stage: {
-		display: 'flex',
-		flexDirection:'column',
-		flex: 1,
-		alignItems: 'center',
-		justifyContent: 'center'
-	}
+    theatre: {
+        flex: 1,
+        display: 'flex',
+        flexDirection: 'column'
+    },
+    stage: {
+        display: 'flex',
+        flexDirection:'column',
+        flex: 1,
+        alignItems: 'center',
+        justifyContent: 'center'
+    }
 }
 
 const Root = () => {
-	return(
-		<div style={styles.theatre}>
-			<div style={styles.stage}>
-				<Card/>
-			</div>
-			<Hint/>
-		</div>
-	)
+    return(
+        <div style={styles.theatre}>
+            <div style={styles.stage}>
+                <Card/>
+            </div>
+            <Hint/>
+        </div>
+    )
 }
 export default Root;
