@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Card from '../components/Card';
 import Hint from '../components/Hint';
 
@@ -20,15 +20,14 @@ const styles = {
 	}
 }
 
-export default class Root extends Component {
-	render() {
-		return(
-			<div style={styles.theatre}>
-				<div style={styles.stage}>
-					<Card/>
-				</div>
-				<Hint/>
+const Root = () => {
+	return(
+		<div style={styles.theatre}>
+			<div style={styles.stage}>
+				<Card/>
 			</div>
-		)
-	}
+			<Hint/>
+		</div>
+	)
 }
+export default Root;
