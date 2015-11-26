@@ -29,15 +29,11 @@ const styles = {
 	}
 }
 
-class ButtonLink extends Component {
-	render() {
-		const href = this.props.href;
-		const colorScheme = this.props.colorScheme || 'default';
-		const title = this.props.title ? this.props.title : href;
-
-		if(colorScheme === 'twitter') return(<a style={Object.assign({}, styles.button, styles.button__twitter)} href={href}>{title}</a>)
-		return(<a style={styles.button} href={href}>{title}</a>)
-	}
+const ButtonLink = ({ href, colorScheme = 'default', title }) => {
+	const _title = title ? title : href;
+	if(colorScheme === 'twitter')
+		return(<a style={Object.assign({}, styles.button, styles.button__twitter)} href={href}>{_title}</a>)
+	return(<a style={styles.button} href={href}>{_title}</a>)
 }
 
 ButtonLink.propTypes = {
