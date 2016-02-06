@@ -1,4 +1,6 @@
-import React, {PropTypes} from 'react';
+import React, {
+  PropTypes
+} from 'react';
 import Radium from 'radium';
 
 const styles = {

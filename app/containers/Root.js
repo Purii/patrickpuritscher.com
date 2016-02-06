@@ -3,8 +3,8 @@ import Card from '../components/Card';
 import Hint from '../components/Hint';
 import {StyleRoot} from 'radium';
 
-require('normalize.css');
-require('./Root.css');
+import 'normalize.css';
+import './Root.css';
 
 const styles = {
     theatre: {
