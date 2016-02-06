@@ -5,7 +5,7 @@
   "description": "",
   "main": "app/index.js",
   "scripts": {
-    "start": "webpack-dev-server --content-base dist/",
+    "start": "webpack-dev-server --devtool eval --progress --colors --content-base dist/",
     "build": "rimraf dist/static && NODE_ENV=production webpack -p",
     "lint": "eslint app/",
     "test": "npm run lint"
