@@ -90,7 +90,7 @@ const Card = () => {
             </div>
             <div style={styles.body}>
                 <p style={styles.bodyText}>
-                    Former student in Business Information Management. Longboarder. Startups. Webdeveloper. Docker. React. React Native.
+                     Graduate of Business Information Management. Longboarder. Startups. Webdeveloper. Docker. React. React Native.
                 </p>
                 <p style={Object.assign({}, styles.bodyText, styles.bodyText__small)}>
                     Stuttgart, Germany
