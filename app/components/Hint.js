@@ -11,13 +11,14 @@ const styles = {
         textAlign:'center',
         marginTop: '20px'
     }
-}
+};
+
 const Hint = () => {
     return (
         <div style={styles.hint}>
             Cookies help me to improve my website. By using my website, you agree to the use of cookies.
         </div>
-    )
-}
+    );
+};
 
 export default Hint;

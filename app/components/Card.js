@@ -4,14 +4,13 @@ import Radium from 'radium';
 
 const globalstyles = {
     borderRadius: '10px'
-}
+};
 
 const styles = {
     'card': {
        display: 'flex',
        flexDirection: 'column',
        width: '300px',
-       backgroundColor: 'rgb(42, 42, 42)',
        backgroundColor: '#343d46',
        borderRadius: '10px',
        boxShadow: '0 0 5px 3px rgba(0, 0, 0, 0.1), 2px 2px 8px rgba(0, 0, 0, 0.1)',
@@ -80,10 +79,10 @@ const styles = {
         borderBottomRightRadius: globalstyles.borderRadius,
         overflow: 'hidden'
     }
-}
+};
 
 const Card = () => {
-    return(
+    return (
         <div style={styles.card}>
             <div style={styles.header}>
                 <div style={styles.headerImage}></div>
@@ -102,7 +101,7 @@ const Card = () => {
                 <ButtonLink colorScheme="twitter" href="https://twitter.com/whoispurii" title="Twitter"/>
             </div>
         </div>
-    )
-}
+    );
+};
 
 export default Radium(Card);

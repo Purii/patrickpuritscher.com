@@ -27,19 +27,20 @@ const styles = {
             marginTop: -1
         }
     }
-}
+};
 
 const ButtonLink = ({ href, colorScheme = 'default', title }) => {
     const _title = title ? title : href;
-    if(colorScheme === 'twitter')
-        return(<a style={Object.assign({}, styles.button, styles.button__twitter)} href={href}>{_title}</a>)
-    return(<a style={styles.button} href={href}>{_title}</a>)
-}
+    if (colorScheme === 'twitter') {
+        return (<a style={Object.assign({}, styles.button, styles.button__twitter)} href={href}>{_title}</a>);
+    }
+    return (<a style={styles.button} href={href}>{_title}</a>);
+};
 
 ButtonLink.propTypes = {
   href: PropTypes.string.isRequired,
   colorScheme: PropTypes.string,
   title: PropTypes.string
-}
+};
 
 export default Radium(ButtonLink);

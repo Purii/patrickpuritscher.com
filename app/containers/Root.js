@@ -1,6 +1,7 @@
 import React from 'react';
 import Card from '../components/Card';
 import Hint from '../components/Hint';
+import {StyleRoot} from 'radium';
 
 require('normalize.css');
 require('./Root.css');
@@ -18,16 +19,16 @@ const styles = {
         alignItems: 'center',
         justifyContent: 'center'
     }
-}
+};
 
 const Root = () => {
-    return(
-        <div style={styles.theatre}>
-            <div style={styles.stage}>
-                <Card/>
-            </div>
-            <Hint/>
+    return (
+      <StyleRoot style={styles.theatre}>
+        <div style={styles.stage}>
+          <Card/>
         </div>
-    )
-}
+        <Hint/>
+      </StyleRoot>
+    );
+};
 export default Root;
