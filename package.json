@@ -30,14 +30,14 @@
     "babel-preset-react": "^6.5.0",
     "cross-env": "^1.0.7",
     "css-loader": "^0.23.1",
-    "eslint": "^2.8.0",
+    "eslint": "^2.9.0",
     "eslint-config-airbnb": "^8.0.0",
     "eslint-plugin-import": "^1.6.1",
     "eslint-plugin-jsx-a11y": "^1.0.4",
     "eslint-plugin-react": "^5.0.1",
     "extract-text-webpack-plugin": "^1.0.1",
     "html-webpack-plugin": "^2.16.0",
-    "postcss-loader": "^0.8.2",
+    "postcss-loader": "^0.9.1",
     "radium": "^0.17.1",
     "rimraf": "^2.5.2",
     "style-loader": "^0.13.1",
@@ -46,7 +46,7 @@
   },
   "dependencies": {
     "normalize.css": "^4.1.1",
-    "react": "^15.0.1",
-    "react-dom": "^15.0.1"
+    "react": "^15.0.2",
+    "react-dom": "^15.0.2"
   }
 }
