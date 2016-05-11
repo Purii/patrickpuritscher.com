@@ -1,8 +1,8 @@
-html {
+:global(html) {
     height: 100%;
     font-size: 16px;
 }
-body {
+:global(body) {
     height: 100%;
     width: 100%;
     min-width: 320px;
@@ -11,8 +11,19 @@ body {
     text-rendering: optimizeLegibility;
     font-size: 1rem;
 }
-#root {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
+:global(#root) {
+    height: 100%;
 }
+
+.theatre {
+    display: flex;
+    flex: 1 0 auto;
+    flex-direction: column;
+    height: 100%;
+  }
+.stage {
+    flex: 1 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }

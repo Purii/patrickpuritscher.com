@@ -1,0 +1,79 @@
+:root {
+    --borderRadius: 10px;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    width: 340px;
+    background-color: #343d46;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.1), 2px 2px 8px rgba(0, 0, 0, 0.1);
+    transition-property: width;
+    transition-duration: 0.6s;
+    transition-timing-function: ease-in-out;
+    margin-top: 20px;
+  }
+  @media (max-width: 350px) {
+      .card {
+        width: 300px;
+      }
+   }
+  .header {
+    border-top-left-radius: var(--borderRadius);
+    border-top-right-radius: var(--borderRadius);
+  }
+  .headerImage {
+    background-image: url(https://avatars0.githubusercontent.com/u/7056989);
+    background-size: cover;
+    background-position: -0px -40px;
+    height: 150px;
+    border-top-left-radius: var(--borderRadius);
+    border-top-right-radius: var(--borderRadius);
+  }
+  .headerTitle {
+    display: inline-block;
+    background-color: rgba(199, 199, 199, 0.97);
+    font-family: HelveticaNeue-Thin, Helvetica Neue Light, Helvetica Neue, Segoe UI, Helvetica, Arial, Lucida Grande, sans-serif;
+    margin-top: -5px;
+    margin-bottom: 0;
+    padding-right: 20px;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 500;
+    color: #4e4e4e;
+    font-size: 24px;
+    text-transform: uppercase;
+  }
+  .body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .bodyText {
+    padding: 0;
+    margin-left: 25px;
+    margin-right: 25px;
+    color: #fff;
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+    line-height: 1.5;
+    font-size: 15px;
+    margin-top: 15;
+    margin-bottom: 10;
+  }
+  .bodyText__small {
+    composes: bodyText;
+    margin-top: 0;
+    font-size: 13px;
+    color: #F8F8F8;
+  }
+  .footer {
+    display: flex;
+    border-top: 2px solid rgb(92, 92, 92);
+    border-bottom-left-radius: var(--borderRadius);
+    border-bottom-right-radius: var(--borderRadius);
+    overflow: hidden;
+  }

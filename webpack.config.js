@@ -1,8 +1,8 @@
-var autoprefixer = require('autoprefixer');
 var env = process.env.NODE_ENV;
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var path = require('path');
+var postcssCssnext = require('postcss-cssnext');
 var webpack = require('webpack');
 
 const publicPath = 'static';
@@ -32,11 +32,11 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        loader: ExtractTextPlugin.extract('style-loader', 'css-loader!postcss-loader'),
+        loader: ExtractTextPlugin.extract('style-loader', 'css-loader?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]!postcss-loader') 
       },
     ],
   },
-  postcss: [autoprefixer({ browsers: ['last 3 versions'] })],
+  postcss: [postcssCssnext],
   plugins: [
     new webpack.optimize.OccurrenceOrderPlugin(true),
     new webpack.DefinePlugin({

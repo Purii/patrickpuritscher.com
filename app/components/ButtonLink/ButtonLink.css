@@ -1,0 +1,23 @@
+.button {
+    flex: 1 0 auto;
+    line-height: 2 !important;
+    color: #fff;
+    text-decoration: none;
+    background-color: #434343;
+    text-align: center;
+}
+.button:hover {
+    background-color: #313131;
+    transition-property: all;
+    transition-duration: .2s;
+    transition-timing-function: ease-in-out;
+    margin-top: -1px;
+ }
+
+ .button__twitter {
+     composes: button;
+     background-color: rgba(85, 172, 238, 0.83);
+ }
+ .button__twitter:hover {
+     background-color: #292f33;
+}
