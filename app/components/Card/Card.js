@@ -2,11 +2,6 @@ import React from 'react';
 import ButtonLink from '../ButtonLink/ButtonLink';
 import styles from './Card.css';
 
-const globalstyles = {
-  borderRadius: '10px',
-};
-
-
 const Card = () => (
   <div className={styles.card}>
     <div className={styles.header}>
