@@ -15,6 +15,10 @@ module.exports = {
   output: {
     path: path.join(__dirname, 'dist'),
     filename: `${publicPath}/bundle.js`,
+    /* IMPORTANT!
+     * You must compile to UMD or CommonJS
+     * so it can be required in a Node context: */
+    libraryTarget: 'umd',
   },
   resolve: {
     extensions: ['.js'],
@@ -107,7 +111,11 @@ if (env === 'production') {
     })
   );
 
-
+  module.exports.plugins.push(
+    new StaticSiteGeneratorPlugin('main', [
+      '/index.html',
+    ], {})
+  );
   // If app is in development
 } else {
   module.exports.plugins.push(
