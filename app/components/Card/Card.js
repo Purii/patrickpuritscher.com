@@ -5,7 +5,7 @@ import styles from './Card.css';
 const Card = () => (
   <div className={styles.card}>
     <div className={styles.header}>
-      <div className={styles.headerImage}></div>
+      <div className={styles.headerImage} />
       <h1 className={styles.headerTitle}>Patrick Puritscher</h1>
     </div>
     <div className={styles.body}>

@@ -3,5 +3,10 @@
   "rules": {
     "max-len": 1,
     "new-cap": 1,
+    "react/jsx-filename-extension": 0,
   },
+  "env": {
+    "browser": true,
+    "node": true
+  }
 }

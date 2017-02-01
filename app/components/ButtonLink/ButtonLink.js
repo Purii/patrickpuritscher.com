@@ -18,4 +18,9 @@ ButtonLink.propTypes = {
   title: PropTypes.string,
 };
 
+ButtonLink.defaultProps = {
+  colorScheme: '',
+  title: false,
+};
+
 export default ButtonLink;
