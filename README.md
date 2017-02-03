@@ -6,4 +6,4 @@
 
 ## Todo
 
-* Consider GatsbyJS or Phenomic
+* Consider Gatsby (1.0), Phenomic or next.js (2.x)
