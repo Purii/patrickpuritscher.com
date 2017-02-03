@@ -17,7 +17,7 @@ export default (locals, callback) => {
       stylesheets={css}
       title="patrickpuritscher.com"
     >
-      <div>
+      <div style={{height: '100%'}}>
       <Root />
       <div dangerouslySetInnerHTML={{__html: Piwik}} />
       </div>
