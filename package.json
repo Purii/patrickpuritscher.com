@@ -7,6 +7,7 @@
   "scripts": {
     "clean": "rimraf dist",
     "start": "webpack-dev-server --host 0.0.0.0 --progress --content-base dist/",
+    "start:static": "cross-env RENDERTOSTATIC=true webpack-dev-server --host 0.0.0.0 --progress --content-base dist/",
     "build": "npm run clean && cross-env NODE_ENV=production webpack",
     "build:static": "npm run clean && cross-env NODE_ENV=production RENDERTOSTATIC=true webpack",
     "lint": "eslint app",
