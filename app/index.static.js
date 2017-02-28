@@ -16,6 +16,15 @@ export default (locals, callback) => {
       scripts={js}
       stylesheets={css}
       title="patrickpuritscher.com"
+      metatags={[
+        { name: 'twitter:card', content: 'summary' },
+        { property: 'og:type', content: 'profile' },
+        { name: 'twitter:site', content: 'whoispurii' },
+        { name: 'twitter:title', property: 'og:title', content: 'Patrick Puritscher' },
+        { name: 'twitter:image', property: 'og:image', content: 'https://avatars0.githubusercontent.com/u/7056989' },
+        { property: 'og:url', content: 'http://patrickpuritscher.com' },
+
+      ]}
     >
       <div style={{height: '100%'}}>
       <Root />

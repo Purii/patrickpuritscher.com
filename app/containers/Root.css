@@ -7,9 +7,12 @@
     width: 100%;
     min-width: 320px;
     background-color: #37474F;
-    font-family: 'Helvetica Neue Light', 'Helvetica Neue', 'Segoe UI', Helvetica, Arial, 'Lucida Grande', sans-serif;
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
     font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: -0.021em;
 }
 :global(#root) {
     height: 100%;

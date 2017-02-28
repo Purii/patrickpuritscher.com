@@ -10,7 +10,7 @@ const Card = () => (
     </div>
     <div className={styles.body}>
       <p className={styles.bodyText}>
-        Masters Student in Business Information Management.
+        Master's Student in Business Information Management.
         Create software for people making their life easier, rather than complicating it with poor UX.
       </p>
       <p className={styles.bodyText__small}>
