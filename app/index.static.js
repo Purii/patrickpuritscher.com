@@ -21,6 +21,8 @@ export default (locals, callback) => {
         { property: 'og:type', content: 'profile' },
         { name: 'twitter:site', content: 'whoispurii' },
         { name: 'twitter:title', property: 'og:title', content: 'Patrick Puritscher' },
+        { name: 'twitter:description', property: 'og:description', content: 'I am a master\'s student in business information management.' },
+        { name: 'description', content: 'I am a master\'s student in business information management.' },
         { name: 'twitter:image', property: 'og:image', content: 'https://avatars0.githubusercontent.com/u/7056989' },
         { property: 'og:url', content: 'http://patrickpuritscher.com' },
 
