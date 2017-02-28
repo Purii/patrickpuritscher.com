@@ -10,7 +10,8 @@ const Card = () => (
     </div>
     <div className={styles.body}>
       <p className={styles.bodyText}>
-        Graduate of Business Information Management. Longboarder. Startups. Webdeveloper. Docker. React. React Native.
+        Masters Student in Business Information Management.
+        Create software for people making their life easier, rather than complicating it with poor UX.
       </p>
       <p className={styles.bodyText__small}>
         Stuttgart, Germany
