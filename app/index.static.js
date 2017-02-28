@@ -17,6 +17,7 @@ export default (locals, callback) => {
       stylesheets={css}
       title="patrickpuritscher.com"
       metatags={[
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         { name: 'twitter:card', content: 'summary' },
         { property: 'og:type', content: 'profile' },
         { name: 'twitter:site', content: 'whoispurii' },
