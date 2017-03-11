@@ -11,7 +11,7 @@ const Card = () => (
     <div className={styles.body}>
       <p className={styles.bodyText}>
         Master's student in business information management.
-        Creating software for people to make their life easier, rather than confusing it even more through bad UX.
+        Creating software for people to make their life easier, rather than confusing it even more through poor UX.
       </p>
       <p className={styles.bodyText__small}>
         Stuttgart, Germany
