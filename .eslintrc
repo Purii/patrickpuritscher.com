@@ -1,12 +1,30 @@
 {
-  "extends": "airbnb",
-  "rules": {
-    "max-len": 1,
-    "new-cap": 1,
-    "react/jsx-filename-extension": 0,
-  },
+  "extends": [
+    "plugin:react/recommended",
+    "prettier",
+    "prettier/react"
+  ],
+  "plugins": [
+    "react",
+    "prettier"
+  ],
   "env": {
-    "browser": true,
+    "es6": true,
     "node": true
+  },
+  "globals": {
+    "__DEV__": true,
+  },
+  "parserOptions": {
+    "ecmaVersion": 2016,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true,
+      "experimentalObjectRestSpread": true
+    }
+  },
+  "rules": {
+    "react/react-in-jsx-scope": 0,
+    "react/display-name": 0
   }
 }
