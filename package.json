@@ -8,6 +8,7 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
+    "export": "next build && next export",
     "lint": "eslint ./",
     "test": "npm run lint",
     "format": "prettier --trailing-comma es5 --single-quote --write '{,!(node_modules|.next)/**/}*.js'"
