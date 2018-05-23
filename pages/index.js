@@ -17,9 +17,9 @@ export default () => (
         <Card />
       </Layout.Stage>
 
-      <Layout.Footer>
+      { false && <Layout.Footer>
         <Footer />
-      </Layout.Footer>
+      </Layout.Footer> }
     </Layout.Theatre>
   </div>
 );

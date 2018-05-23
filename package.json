@@ -1,9 +1,9 @@
 {
   "name": "patrickpuritscher.com",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "",
   "main": "index.js",
-  "private": "true",
+  "private": true,
   "scripts": {
     "dev": "next",
     "build": "next build",
@@ -24,18 +24,18 @@
   },
   "homepage": "https://github.com/Purii/patrickpuritscher.com#readme",
   "devDependencies": {
-    "eslint": "^4.10.0",
-    "eslint-config-prettier": "^2.7.0",
-    "eslint-plugin-prettier": "^2.3.1",
-    "eslint-plugin-react": "^7.4.0",
+    "eslint": "^4.19.1",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-prettier": "^2.6.0",
+    "eslint-plugin-react": "^7.8.2",
     "husky": "^0.14.3",
-    "prettier": "^1.7.4",
-    "prop-types": "^15.6.0"
+    "prettier": "^1.12.1",
+    "prop-types": "^15.6.1"
   },
   "dependencies": {
-    "next": "^4.1.4",
-    "normalize.css": "^7.0.0",
-    "react": "^16.0.0",
-    "react-dom": "^16.0.0"
+    "next": "^6.0.3",
+    "normalize.css": "^8.0.0",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2"
   }
 }
