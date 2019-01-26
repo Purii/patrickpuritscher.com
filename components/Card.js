@@ -1,5 +1,5 @@
-const borderRadius = '10px';
-const letterSpacing = (pointSize, tracking) => pointSize * tracking / 1000;
+const borderRadius = "10px";
+const letterSpacing = (pointSize, tracking) => (pointSize * tracking) / 1000;
 
 export default () => (
   <div className="card">
@@ -9,9 +9,10 @@ export default () => (
     </div>
     <div className="body">
       <p className="bodyText">
-        Master&apos;s student in business information management. Creating software
-        for people to make their life easier, rather than confusing it through
-        poor UX.
+        <i>Always thirsty for knowledge.</i>
+        <br />
+        Developing software for people to make their lives easier instead of
+        confusing them with bad UX.
       </p>
       <p className="bodyText bodyText__small">Stuttgart, Germany</p>
     </div>
@@ -51,18 +52,19 @@ export default () => (
         border-top-right-radius: ${borderRadius};
       }
       .headerImage {
-        background-image: url(https://avatars0.githubusercontent.com/u/7056989);
+        background-image: url(https://pbs.twimg.com/profile_images/1013778655175168005/IA7kepDh_400x400.jpg);
         background-size: cover;
-        background-position: -0px -40px;
-        height: 150px;
+        background-repeat: no-repeat;
+        background-position: -0px center;
+        height: 250px;
         border-top-left-radius: ${borderRadius};
         border-top-right-radius: ${borderRadius};
       }
       .headerTitle {
         display: inline-block;
         background-color: rgba(199, 199, 199, 0.97);
-        font-family: 'SF Pro Display', 'SF Pro Icons', 'Helvetica Neue',
-          'Helvetica', 'Arial', sans-serif;
+        font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue",
+          "Helvetica", "Arial", sans-serif;
         margin-top: -5px;
         margin-bottom: 0;
         padding-right: 20px;
