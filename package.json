@@ -33,7 +33,7 @@
     "prop-types": "^15.6.2"
   },
   "dependencies": {
-    "next": "^7.0.2",
+    "next": "^12.1.0",
     "normalize.css": "^8.0.1",
     "react": "^16.7.0",
     "react-dom": "^16.7.0"
