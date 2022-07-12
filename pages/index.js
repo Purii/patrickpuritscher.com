@@ -8,7 +8,7 @@ import Card from '../components/Card';
 export default () => (
   <div>
     <Head>
-      <title>Patrick Puritscher</title>
+      <title>Patrick Böder (formerly Puritscher)</title>
       <meta name="viewport" content="width=device-width, initial-scale=1"/>
     </Head>
     <Layout.Theatre>

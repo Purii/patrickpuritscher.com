@@ -5,7 +5,7 @@ export default () => (
   <div className="card">
     <div className="header">
       <div className="headerImage" />
-      <h1 className="headerTitle">Patrick Puritscher</h1>
+      <h1 className="headerTitle">Patrick Böder (formerly Puritscher)</h1>
     </div>
     <div className="body">
       <p className="bodyText">
